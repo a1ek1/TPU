@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="../Photos/Главная/ikonka.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../Css/questions.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Narnoor&family=Raleway:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+    <title>Сырбург - интернет-магазин сыров</title>
+  </head>
+  <body>
+    <header id="navbar" class="header">
+      <div class="container">
+        <div class="header_inner">
+          <nav class="nav">
+            <li>
+              <a class="nav__link" href="../index.html"> Главная </a>
+            </li>
+            <li>
+              <a class="nav__link" href="../Html/items.html"> Каталог </a>
+            </li>
+
+            <a class="nav__link cart" href="../Html/cart.html"> Корзина </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="sectionn">
+      <div class="containner">
+        <h1 style="font-weight: 700">Часто задаваемые вопросы</h1>
+      </div>
+    </section>
+    <section class="sectionn" style="margin-top: 20px">
+      <div class="containner">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                Какие варианты оплаты вы принимаете?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Мы предлагаем различныеварианты оплаты, чтобы сделать процесс
+                покупки сыров удобным и доступным для наших клиентов. Мы
+                принимаем оплату банковскими картами Visa, MasterCard Мир и
+                American Express. Вы можете использовать свою кредитную или
+                дебетовую карту для безопасной и удобной оплаты заказа. Кроме
+                того, мы поддерживаем платежные системы PayPal и Apple Pay,
+                чтобы предоставить вам дополнительные варианты оплаты. Мы
+                уделяем внимание защите ваших финансовых данных и принимаем все
+                необходимые меры для обеспечения безопасности платежей.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Что делать, если я получил поврежденный или некачественный сыр?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Ваше удовлетворение и доверие очень важны для нас, поэтому мы
+                гарантируем высокое качество нашей продукции. Если вы обнаружите
+                повреждение или получите сыр, не соответствующий вашим
+                ожиданиям, пожалуйста, свяжитесь с нашей службой поддержки
+                клиентов как можно скорее. Мы готовы решить эту проблему и найти
+                наилучшее решение для вас. В большинстве случаев мы предлагаем
+                замену поврежденного товара или возмещение средств. Наша команда
+                всегда готова помочь вам, поэтому не стесняйтесь обращаться к
+                нам в случае любых вопросов или проблем.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Как долго занимает доставка?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Мы стремимся выполнить доставку в максимально короткие сроки,
+                чтобы вы могли насладиться свежестью и качеством наших сыров.
+                Обычно мы доставляем заказы в течение 7-8 рабочих дней после
+                оформления заказа. Однако, время доставки может варьироваться в
+                зависимости от вашего местоположения и наличия товара. Если вы
+                находитесь в удаленном районе или в другой стране, доставка
+                может занять немного больше времени. Мы всегда стараемся
+                информировать наших клиентов о статусе доставки и предоставить
+                им информацию для отслеживания заказа.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Каковы условия хранения сыров после доставки?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Сыры - это деликатесные продукты, требующие особых условий
+                хранения. Рекомендуется хранить сыры в холодильнике при
+                температуре от +2°C до +8°C. Обычно мы упаковываем сыры в
+                специальную вакуумную упаковку, чтобы сохранить их свежесть и
+                аромат. При получении заказа, рекомендуется распаковать сыры и
+                хранить их в специальных сырных бумагах, чтобы сохранить их вкус
+                и текстуру.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Вы предлагаете сыры для особых диет, таких как безлактозные или
+                безглютеновые сыры?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Да, мы учитываем различные диетические потребности наших
+                клиентов. Мы предлагаем широкий выбор сыров без лактозы для
+                людей, страдающих непереносимостью лактозы. Также у нас есть
+                ассортимент безглютеновых сыров для тех, кто придерживается
+                безглютеновой диеты. Пожалуйста, обратите внимание на информацию
+                о продукте, чтобы узнать, какие сыры подходят для ваших
+                диетических потребностей.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                Можно ли оставить специальные инструкции для доставки, например,
+                если я не буду дома в момент доставки?
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingSix"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Да, вы можете оставить специальные инструкции для доставки,
+                чтобы удовлетворить ваши потребности. Во время оформления заказа
+                у вас будет возможность добавить комментарий или инструкции.
+                Например, вы можете попросить доставщика оставить посылку у
+                соседа или в офисе. Мы постараемся учесть ваши инструкции и
+                обеспечить удобство получения заказа.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+          integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+          crossorigin="anonymous"
+        ></script>
+      </div>
+    </section>
+    <footer class="footter">
+      <div class="containner">
+        <div class="footter__inner">
+          <div class="footter__col footter__col--first">
+            <div class="footter__logo">Сырбург</div>
+            <div class="footter__text">
+              Сырбург - ведущая компания в интернет-продаже сыров различных
+              стран по всей России. Мы предлагаем широкий ассортимент
+              высококачественных сыров и обеспечиваем удобные условия покупки.
+              Наша команда всегда готова помочь вам с выбором и обеспечить
+              высокий уровень обслуживания. Приобретайте непревзойденные сыры из
+              разных стран мира в Сырбурге и наслаждайтесь их вкусом!
+            </div>
+            <div class="footter__social">
+              <div class="footter__social-header">
+                <b>100 000</b> покупателей
+              </div>
+              <div class="footter__social-content">
+                Подписывайтесь на нас:
+                <a href="#" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+
+            <form class="subscribe" action="/" method="post">
+              <input
+                class="subscribe__input"
+                type="email"
+                name="name"
+                placeholder="Ваша почта..."
+              />
+              <button class="subscribe__btn" type="submit">Подписаться</button>
+            </form>
+          </div>
+          <div class="footter__col footter__col--second">
+            <div class="footter__title">Полезные ссылки</div>
+
+            <div class="blogs">
+              <div class="blogs__item">
+                <img
+                  class="blogs__img"
+                  src="../Photos/Главная/низ.png"
+                  alt=""
+                />
+                <div class="blogs__content">
+                  <a class="blogs__title" href="../Html/delivery.html"
+                    >Информация о доставке и региональных ограничениях
+                  </a>
+                </div>
+              </div>
+
+              <div class="blogs__item">
+                <img
+                  class="blogs__img"
+                  src="../Photos/Главная/лупа.png"
+                  alt=""
+                />
+                <div class="blogs__content">
+                  <a class="blogs__title" href="../Html/patnery.html"
+                    >Информация о всех партнерах нашей компании</a
+                  >
+                </div>
+              </div>
+
+              <div class="blogs__item">
+                <img
+                  class="blogs__img"
+                  src="../Photos/Главная/вопрос.png"
+                  alt=""
+                />
+                <div class="blogs__content">
+                  <a class="blogs__title" href="../Html/questions.html"
+                    >Часто задаваемые вопросы от пользователей</a
+                  >
+                </div>
+              </div>
+              <div class="blogs__item">
+                <img
+                  class="blogs__img"
+                  src="../Photos/Главная/лампочка.png"
+                  alt=""
+                />
+                <div class="blogs__content">
+                  <a class="blogs__title" href="../Html/cheese.html"
+                    >Популярные виды сыров среди потребителей</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footter__col footter__col--third">
+            <div class="footter__title">Связь с нами</div>
+            <div class="svyaz">
+              <a class="svyaz__item"> Телефон: 8-800-555-35-35 </a>
+              <a class="svyaz__item">
+                <p>Почта: cheeseburg@gmail.com</p>
+              </a>
+            </div>
+            <div class="image">
+              <img src="../Photos/Главная/футер.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          © 2023 Сырбург by <span>Семченко Олег</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

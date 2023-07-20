@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="../Photos/Главная/ikonka.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../Css/belgium.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Narnoor&family=Raleway:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+    <title>Сырбург - интернет-магазин сыров</title>
+  </head>
+  <body>
+    <header id="navbar" class="header">
+      <div class="container">
+        <div class="header_inner">
+          <nav class="nav">
+            <li>
+              <a class="nav__link" href="../index.html">Главная</a>
+            </li>
+            <li>
+              <a class="nav__link" href="../Html/items.html">Каталог</a>
+            </li>
+            <li>
+              <a class="nav__link1" href="#"
+                >__________________________________________________________________________</a
+              >
+            </li>
+            <a class="nav__link cart" href="#" onclick="openPopup()">Корзина</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="section" style="padding-top: 50px">
+      <div class="container">
+        <div class="title">
+          <h1>Английские сыры</h1>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <article class="item" data-id="01">
+          <main class="main">
+            <img
+              class="product_image product_image2"
+              src="../Photos/Британия/lester.png"
+              alt=""
+            />
+            <div class="product_title">
+              <a>Красный Лестер</a>
+            </div>
+            <div class="sostav">
+              Роскошный цветной сыр слоистой текстуры, красно-коричневого
+              оттенка, обладает спелым ореховым ароматом.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button data_cart class="buy_item" data-size="big">
+              В корзину
+            </button>
+          </footer>
+        </article>
+        <article class="item" data-id="02">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Британия/koziy.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Козий сыр</a>
+            </div>
+            <div class="sostav">
+              Сыр с сильным оригинальным запахом и равномерной текстурой.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button data_cart class="buy_item" data-size="big">
+              В корзину
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main" data-id="03">
+            <div class="product_image product_image2">
+              <img src="../Photos/Британия/chadder.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Чеддер</a>
+            </div>
+            <div class="sostav">
+              Семейство сыров с богатой палитрой вкусов и ароматов, от
+              умеренного до зрелого.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button data_cart class="buy_item" data-size="big">
+              В корзину
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Британия/camambert.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Камамбер</a>
+            </div>
+            <div class="sostav">
+              Пикантно-сливочный, с сильным ароматом.Мягкая, кремообразная
+              сердцевина и тонкая, съедобная корочка сыра Камамбер делают его
+              идеальным спутником свежих круассанов и крекеров.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2100 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Британия/lancashire.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Ланкашир</a>
+            </div>
+            <div class="sostav">
+              Фермерский сыр с легкой текстурой и умеренным ароматом.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2100 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Британия/brie.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Бри</a>
+            </div>
+            <div class="sostav">
+              Равно как и его французский кузен, является сливочным сыром с
+              нежным ароматом и текстурой.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2100 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Британия/cheshire.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Чешир</a>
+            </div>
+            <div class="sostav">
+              Сыр может быть чисто белым или цветным, но главные черты
+              сохранятся. Это рассыпчатая, шелковистая текстура и свежий,
+              насыщенный аромат.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2100 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="title">
+          <h1>Бельгийские сыры</h1>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Бельгия/westmalle.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Вестмалле</a>
+            </div>
+            <div class="sostav">
+              Бельгийский полутвердый сыр из коровьего молока.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">1000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Бельгия/limburger.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Лимбургер</a>
+            </div>
+            <div class="sostav">
+              Мягкий сыр из пастеризованного коровьего молока, отличается резким
+              ароматом и интенсивным вкусом
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">1500 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Бельгия/orval.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Орваль</a>
+            </div>
+            <div class="sostav">
+              Бельгийский мягкий сыр из коровьего или овечьего молока.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">1700 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="title">
+          <h1>Голландские сыры</h1>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Голландия/gauda.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Гауда</a>
+            </div>
+            <div class="sostav">
+              Твёрдый голландский сыр, изготавливаемый из коровьего молока.
+              Жирность — в пределах 48—51 %.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Голландия/leiden.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Лейденский сыр</a>
+            </div>
+            <div class="sostav">
+              Сорт полутвёрдого голландского сыра, который изготавливается из
+              сепарированного коровьего молока. Добавление тмина, кумина и
+              прочих приправ придаёт сыру характерный острый вкус.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Голландия/maasda,.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Маасдам</a>
+            </div>
+            <div class="sostav">
+              Представитель сыров натурального вызревания, получил своё название
+              в честь маленького городка Маасдам в Нидерландах. Сыр отличают
+              большие глазки и сладковато-ореховый вкус.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Голландия/edam.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Эдам</a>
+            </div>
+            <div class="sostav">
+              Вкус сыра слегка ореховый, а аромат усиливается по мере
+              созревания. Молодой Эдам — неострый, слегка сладковатый, с
+              пикантным вкусом. Выдержанный Эдам — более сухой и солёный, по
+              мере созревания его вкус усиливается.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="title">
+          <h1>Итальянские сыры</h1>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Италия/bel-paeze.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Бель-паэзе</a>
+            </div>
+            <div class="sostav">
+              Итальянский полутвердый сыр, с обмытой коркой, из коровьего
+              молока, с содержанием жира от 45 до 50%.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Италия/burrata.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Буррата</a>
+            </div>
+            <div class="sostav">
+              Итальянский свежий сыр, изготавливаемый из сливок и молока
+              буйволицы или коровы; относится к семейству сыров моцарелла.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Италия/castelmanio.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Кастельманьо</a>
+            </div>
+            <div class="sostav">
+              Итальянский сорт полутвёрдого прессованного сыра с вкраплениями
+              плесени голубого цвета, производимый в Пьемонте.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Италия/quarti.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Квартироло Ломбардо</a>
+            </div>
+            <div class="sostav">
+              Итальянский мягкий сыр из коровьего молока, производимый в регионе
+              Ломбардия
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Италия/mascarpone.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Маскарпоне</a>
+            </div>
+            <div class="sostav">
+              Итальянский сливочный сыр, приготавливаемый из коровьего или
+              молока буйволиц (сливки)
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Италия/ricotta.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Рикотта</a>
+            </div>
+            <div class="sostav">
+              Традиционный итальянский сывороточный сыр. Рикотта
+              приготавливается из сыворотки, остающейся после приготовления
+              моцареллы или других сыров.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Италия/strachatella.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Страчателла</a>
+            </div>
+            <div class="sostav">
+              Мягкий сыр, производимый из молока итальянских буйволиц в
+              провинции Фоджа.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Италия/toma.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Тома Пьемонтезе</a>
+            </div>
+            <div class="sostav">
+              Итальянский мягкий или полутвердый сыр из коровьего молока,
+              производимый в регионе Пьемонт
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="title">
+          <h1>Немецкие сыры</h1>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Германия/tilsitter.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Тильзиттер</a>
+            </div>
+            <div class="sostav">
+              Этот знаменитый светло-желтый полутвердый сыр производят из
+              пастеризованного коровьего молока, зачастую добавляя к
+              традиционному составу черный перец и тмин.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Германия/babarish.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Баварский голубой сыр</a>
+            </div>
+            <div class="sostav">
+              Мягкий кисловатый сыр с голубой плесенью. В Германии его делают из
+              пастеризованного молока с добавлением жирных сливок, за счет чего
+              он легко ложится на теплый хлеб.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Германия/dorblue.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Дорблю</a>
+            </div>
+            <div class="sostav">
+              Для Дорблю берется только пастеризованное коровье молоко, соль,
+              свертывающий фермент и секретная плесневая культура, название
+              которой изготовитель не разглашает.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Германия/handkexe.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Хандкезе</a>
+            </div>
+            <div class="sostav">
+              Производится из кисломолочного творога, за счет чего сохраняет
+              свои диетические свойства.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Германия/milbekenze.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Мильбенкезе</a>
+            </div>
+            <div class="sostav">
+              В производстве сыра применяются сырные клещи вида Tyrophagus
+              casei, ферменты которых обеспечивают созревание сыра вместо
+              сычужного фермента или молочнокислых бактерий.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="title">
+          <h1>Российские сыры</h1>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Россия/adygeisk.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Адыгейский</a>
+            </div>
+            <div class="sostav">
+              Национальное блюдо черкесской кухни, готовящееся только из
+              коровьего молока.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Россия/brynza.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Брынза</a>
+            </div>
+            <div class="sostav">
+              Рассольный сыр , изготавливаемый из козьего или овечьего молока.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Россия/costroma.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Костромской</a>
+            </div>
+            <div class="sostav">
+              По своим характеристикам напоминает голландский сыр гауда, на вкус
+              слегка терпкий, кисловатый.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Россия/poshehon.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Пошехонский</a>
+            </div>
+            <div class="sostav">
+              Российский твёрдый сычужный сыр. Жирность - 45 %
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Россия/russia.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Российский</a>
+            </div>
+            <div class="sostav">
+              Полутвёрдый сычужный сыр из пастеризованного коровьего молока.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="title">
+          <h1>Французские сыры</h1>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <article class="item">
+          <main class="main">
+            <div class="product_image product_image2">
+              <img src="../Photos/Франция/rebloshon.png" alt="" />
+            </div>
+            <div class="product_title">
+              <a>Реблошон</a>
+            </div>
+            <div class="sostav">
+              Французский мягкий сыр из непастеризованного коровьего молока из
+              французской области Савойя.
+            </div>
+          </main>
+          <footer class="footer_item">
+            <div class="product_price">2000 Р/кг</div>
+            <button class="buy_item" data-size="medium">
+              <p>В корзину</p>
+            </button>
+          </footer>
+        </article>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__col footer__col--first">
+            <div class="footer__logo">Сырбург</div>
+            <div class="footer__text">
+              Сырбург - ведущая компания в интернет-продаже сыров различных
+              стран по всей России. Мы предлагаем широкий ассортимент
+              высококачественных сыров и обеспечиваем удобные условия покупки.
+              Наша команда всегда готова помочь вам с выбором и обеспечить
+              высокий уровень обслуживания. Приобретайте непревзойденные сыры из
+              разных стран мира в Сырбурге и наслаждайтесь их вкусом!
+            </div>
+            <div class="footer__social">
+              <div class="footer__social-header">
+                <b>100 000</b> покупателей
+              </div>
+              <div class="footer__social-content">
+                Подписывайтесь на нас:
+                <a href="#" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+
+            <form class="subscribe" action="/" method="post">
+              <input
+                class="subscribe__input"
+                type="email"
+                name="name"
+                placeholder="Ваша почта..."
+              />
+              <button class="subscribe__btn" type="submit">Подписаться</button>
+            </form>
+          </div>
+          <div class="footer__col footer__col--second">
+            <div class="footer__title">Полезные ссылки</div>
+
+            <div class="blogs">
+              <div class="blogs__item">
+                <img
+                  class="blogs__img"
+                  src="../Photos/Главная/низ.png"
+                  alt=""
+                />
+                <div class="blogs__content">
+                  <a class="blogs__title" href="../Html/delivery.html"
+                    >Информация о доставке и региональных ограничениях
+                  </a>
+                </div>
+              </div>
+
+              <div class="blogs__item">
+                <img
+                  class="blogs__img"
+                  src="../Photos/Главная/лупа.png"
+                  alt=""
+                />
+                <div class="blogs__content">
+                  <a class="blogs__title" href="../Html/patnery.html"
+                    >Информация о всех партнерах нашей компании</a
+                  >
+                </div>
+              </div>
+
+              <div class="blogs__item">
+                <img
+                  class="blogs__img"
+                  src="../Photos/Главная/вопрос.png"
+                  alt=""
+                />
+                <div class="blogs__content">
+                  <a class="blogs__title" href="../Html/questions.html"
+                    >Часто задаваемые вопросы от пользователей</a
+                  >
+                </div>
+              </div>
+              <div class="blogs__item">
+                <img
+                  class="blogs__img"
+                  src="../Photos/Главная/лампочка.png"
+                  alt=""
+                />
+                <div class="blogs__content">
+                  <a class="blogs__title" href="../Html/cheese.html"
+                    >Популярные виды сыров среди потребителей</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__col footer__col--third">
+            <div class="footer__title">Связь с нами</div>
+            <div class="svyaz">
+              <a class="svyaz__item"> Телефон: 8-800-555-35-35 </a>
+              <a class="svyaz__item">
+                <p>Почта: cheeseburg@gmail.com</p>
+              </a>
+            </div>
+            <div class="image">
+              <img src="../Photos/Главная/футер.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          © 2023 Сырбург by <span>Семченко Олег</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

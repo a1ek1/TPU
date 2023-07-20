@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="../Практика/Photos/Главная/ikonka.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../Практика/Css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Narnoor&family=Raleway:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+    <title>Сырбург - интернет-магазин сыров</title>
+  </head>
+  <body>
+    <header id="navbar" class="header">
+      <div class="container">
+        <div class="header_inner">
+          <nav class="nav">
+            <li>
+              <a class="nav__link" href="../Практика/index.html"> Главная </a>
+            </li>
+            <li>
+              <a class="nav__link" href="../Практика/Html/items.html">
+                Каталог
+              </a>
+            </li>
+            <a class="nav__link cart" href="../Практика/Html/cart.html">
+              Корзина
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="title">
+      <div class="topimage">
+        <img src="../Практика/Photos/Главная/баннер.jpg" alt="zamok" />
+      </div>
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="number1">
+          <div class="section1__header">
+            <h1>Поставщик сыров в России №1</h1>
+          </div>
+          <div class="section1__text">
+            <p>
+              Наша компания сотрудничает более чем с 510 компаниями по всей
+              России от Калининграда до Владивостока. Есть филиалы в
+              <i>Украине, Монголии и Беларуси</i>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="number2">
+          <div class="section2__header">
+            <h1>Большое разнообразие продукции</h1>
+          </div>
+          <div class="section2__text">
+            <p>
+              Мы гордимся предлагать вам широкий выбор сыров, от классических
+              сортов до экзотических вариаций. У нас есть сыры разных стран,
+              различных вкусовых профилей и текстур, чтобы удовлетворить самый
+              изысканный вкус каждого гурмана. Насладитесь нашим разнообразием
+              сыров и откройте для себя новые гастрономические впечатления.
+            </p>
+          </div>
+          <div class="image">
+            <img
+              src="../Практика/Photos/Главная/многосыра.jpg"
+              alt="многосыра"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="number3">
+          <div class="section2__header">
+            <h1>Гарантия качества продукции</h1>
+          </div>
+          <div class="section3__text">
+            <p>
+              Приобретая наши сыры, вы можете быть уверены в их высочайшем
+              качестве. Мы гарантируем свежесть и натуральность каждого
+              продукта, тщательно отбирая лучшие ингредиенты. Наша команда
+              экспертов по сырам следит за каждым этапом производства, чтобы
+              предоставить вам только самое лучшее.
+            </p>
+          </div>
+          <div class="section3__image">
+            <img src="../Практика/Photos/Главная/класс.jpg" alt="многосыра" />
+            <img src="../Практика/Photos/Главная/класс2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="section2__header">
+          <h1>Отзывы наших покупателей!</h1>
+        </div>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img
+              src="../Практика/Photos/Главная/img1.png"
+              style="width: 100%"
+            />
+            <div class="text">Алексей, Новосибирск</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img
+              src="../Практика/Photos/Главная/img2.png"
+              style="width: 100%"
+            />
+            <div class="text">Илья, Киев</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img
+              src="../Практика/Photos/Главная/img3.png"
+              style="width: 100%"
+            />
+            <div class="text">Владислав, Минск</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img
+              src="../Практика/Photos/Главная/img4.png"
+              style="width: 100%"
+            />
+            <div class="text">Михаил, Улан-Батор</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides((slideIndex += n));
+          }
+
+          function currentSlide(n) {
+            showSlides((slideIndex = n));
+          }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+              slideIndex = 1;
+            }
+            if (n < 1) {
+              slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+          }
+        </script>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__col footer__col--first">
+            <div class="footer__logo">Сырбург</div>
+            <div class="footer__text">
+              Сырбург - ведущая компания в интернет-продаже сыров различных
+              стран по всей России. Мы предлагаем широкий ассортимент
+              высококачественных сыров и обеспечиваем удобные условия покупки.
+              Наша команда всегда готова помочь вам с выбором и обеспечить
+              высокий уровень обслуживания. Приобретайте непревзойденные сыры из
+              разных стран мира в Сырбурге и наслаждайтесь их вкусом!
+            </div>
+            <div class="footer__social">
+              <div class="footer__social-header">
+                <b>100 000</b> покупателей
+              </div>
+              <div class="footer__social-content">
+                Подписывайтесь на нас:
+                <a href="#" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+
+            <form class="subscribe" action="/" method="post">
+              <input
+                class="subscribe__input"
+                type="email"
+                name="name"
+                placeholder="Ваша почта..."
+              />
+              <button class="subscribe__btn" type="submit">Подписаться</button>
+            </form>
+          </div>
+          <div class="footer__col footer__col--second">
+            <div class="footer__title">Полезные ссылки</div>
+
+            <div class="blogs">
+              <div class="blogs__item">
+                <img
+                  class="blogs__img"
+                  src="../Практика/Photos/Главная/низ.png"
+                  alt=""
+                />
+                <div class="blogs__content">
+                  <a class="blogs__title" href="../Практика/Html/delivery.html"
+                    >Информация о доставке и региональных ограничениях
+                  </a>
+                </div>
+              </div>
+
+              <div class="blogs__item">
+                <img
+                  class="blogs__img"
+                  src="../Практика/Photos/Главная/лупа.png"
+                  alt=""
+                />
+                <div class="blogs__content">
+                  <a class="blogs__title" href="../Практика/Html/patnery.html"
+                    >Информация о всех партнерах нашей компании</a
+                  >
+                </div>
+              </div>
+
+              <div class="blogs__item">
+                <img
+                  class="blogs__img"
+                  src="../Практика/Photos/Главная/вопрос.png"
+                  alt=""
+                />
+                <div class="blogs__content">
+                  <a class="blogs__title" href="../Практика/Html/questions.html"
+                    >Часто задаваемые вопросы от пользователей</a
+                  >
+                </div>
+              </div>
+              <div class="blogs__item">
+                <img
+                  class="blogs__img"
+                  src="../Практика/Photos/Главная/лампочка.png"
+                  alt=""
+                />
+                <div class="blogs__content">
+                  <a class="blogs__title" href="../Практика/Html/cheese.html"
+                    >Популярные виды сыров среди потребителей</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__col footer__col--third">
+            <div class="footer__title">Связь с нами</div>
+            <div class="svyaz">
+              <a class="svyaz__item"> Телефон: 8-800-555-35-35 </a>
+              <a class="svyaz__item">
+                <p>Почта: cheeseburg@gmail.com</p>
+              </a>
+            </div>
+            <div class="image">
+              <img src="../Практика/Photos/Главная/футер.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          © 2023 Сырбург by <span>Семченко Олег</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

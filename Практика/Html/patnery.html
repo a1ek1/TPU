@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="../Photos/Главная/ikonka.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../Css/partnery.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Narnoor&family=Raleway:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+    <title>Сырбург - интернет-магазин сыров</title>
+  </head>
+  <body>
+    <header id="navbar" class="headder">
+      <div class="containner">
+        <div class="header_inner">
+          <nav class="nav">
+            <li>
+              <a class="nav__link" href="../index.html"> Главная </a>
+            </li>
+            <li>
+              <a class="nav__link" href="../Html/items.html"> Каталог </a>
+            </li>
+
+            <a class="nav__link cart" href="../Html/cart.html"> Корзина </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="sectionn">
+      <div class="containner">
+        <h1 style="font-weight: 700">Информация о всех наших поставщиках</h1>
+      </div>
+    </section>
+    <section class="sectionn" style="margin-top: 20px">
+      <div class="containner">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Название поставщика</th>
+              <th scope="col">Страна</th>
+              <th scope="col">Почта</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>ООО "Agrokoml"</td>
+              <td>Россия</td>
+              <td>agrokoml@gmail.com</td>
+            </tr>
+
+            <tr>
+              <th scope="row">2</th>
+              <td>Fromage de France</td>
+              <td>Франция</td>
+              <td>fromagefrance@gmail.com</td>
+            </tr>
+
+            <tr>
+              <th scope="row">3</th>
+              <td>Formaggi Italiani</td>
+              <td>Италия</td>
+              <td>formaggiitaliani@gmail.com</td>
+            </tr>
+
+            <tr>
+              <th scope="row">4</th>
+              <td>Belgian Cheese Co.</td>
+              <td>Бельгия</td>
+              <td>belgiancheese@gmail.com</td>
+            </tr>
+
+            <tr>
+              <th scope="row">5</th>
+              <td>Dutch Cheese Supplier</td>
+              <td>Голландия</td>
+              <td>dutchcheesesupplier@gmail.com</td>
+            </tr>
+
+            <tr>
+              <th scope="row">6</th>
+              <td>English Cheese Ltd.</td>
+              <td>Англия</td>
+              <td>englishcheese@gmail.com</td>
+            </tr>
+
+            <tr>
+              <th scope="row">7</th>
+              <td>Deutsche Käse GmbH</td>
+              <td>Германия</td>
+              <td>deutschekase@gmail.com</td>
+            </tr>
+
+            <tr>
+              <th scope="row">8</th>
+              <td>Cheese Masters</td>
+              <td>Франция</td>
+              <td>cheesemasters@gmail.com</td>
+            </tr>
+
+            <tr>
+              <th scope="row">9</th>
+              <td>Gouda Delights</td>
+              <td>Голландия</td>
+              <td>goudadelights@gmail.com</td>
+            </tr>
+
+            <tr>
+              <th scope="row">10</th>
+              <td>Formaggio Italiano</td>
+              <td>Италия</td>
+              <td>formaggioitaliano@gmail.com</td>
+            </tr>
+            <tr>
+              <th scope="row">11</th>
+              <td>La Fromagerie</td>
+              <td>Франция</td>
+              <td>lafromagerie@gmail.com</td>
+            </tr>
+
+            <tr>
+              <th scope="row">12</th>
+              <td>Italian Cheese Masters</td>
+              <td>Италия</td>
+              <td>italiancheesemasters@gmail.com</td>
+            </tr>
+
+            <tr>
+              <th scope="row">13</th>
+              <td>Belgian Delights</td>
+              <td>Бельгия</td>
+              <td>belgiandelights@gmail.com</td>
+            </tr>
+
+            <tr>
+              <th scope="row">14</th>
+              <td>English Cheese Emporium</td>
+              <td>Англия</td>
+              <td>englishcheeseemporium@gmail.com</td>
+            </tr>
+
+            <tr>
+              <th scope="row">15</th>
+              <td>Deutscher Käsehersteller</td>
+              <td>Германия</td>
+              <td>deutscherkasehersteller@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <footer class="footter">
+      <div class="containner">
+        <div class="footter__inner">
+          <div class="footter__col footter__col--first">
+            <div class="footter__logo">Сырбург</div>
+            <div class="footter__text">
+              Сырбург - ведущая компания в интернет-продаже сыров различных
+              стран по всей России. Мы предлагаем широкий ассортимент
+              высококачественных сыров и обеспечиваем удобные условия покупки.
+              Наша команда всегда готова помочь вам с выбором и обеспечить
+              высокий уровень обслуживания. Приобретайте непревзойденные сыры из
+              разных стран мира в Сырбурге и наслаждайтесь их вкусом!
+            </div>
+            <div class="footter__social">
+              <div class="footter__social-header">
+                <b>100 000</b> покупателей
+              </div>
+              <div class="footter__social-content">
+                Подписывайтесь на нас:
+                <a href="#" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+
+            <form class="subscribe" action="/" method="post">
+              <input
+                class="subscribe__input"
+                type="email"
+                name="name"
+                placeholder="Ваша почта..."
+              />
+              <button class="subscribe__btn" type="submit">Подписаться</button>
+            </form>
+          </div>
+          <div class="footter__col footter__col--second">
+            <div class="footter__title">Полезные ссылки</div>
+
+            <div class="blogs">
+              <div class="blogs__item">
+                <img
+                  class="blogs__img"
+                  src="../Photos/Главная/низ.png"
+                  alt=""
+                />
+                <div class="blogs__content">
+                  <a class="blogs__title" href="../Html/delivery.html"
+                    >Информация о доставке и региональных ограничениях
+                  </a>
+                </div>
+              </div>
+
+              <div class="blogs__item">
+                <img
+                  class="blogs__img"
+                  src="../Photos/Главная/лупа.png"
+                  alt=""
+                />
+                <div class="blogs__content">
+                  <a class="blogs__title" href="../Html/patnery.html"
+                    >Информация о всех партнерах нашей компании</a
+                  >
+                </div>
+              </div>
+
+              <div class="blogs__item">
+                <img
+                  class="blogs__img"
+                  src="../Photos/Главная/вопрос.png"
+                  alt=""
+                />
+                <div class="blogs__content">
+                  <a class="blogs__title" href="../Html/questions.html"
+                    >Часто задаваемые вопросы от пользователей</a
+                  >
+                </div>
+              </div>
+              <div class="blogs__item">
+                <img
+                  class="blogs__img"
+                  src="../Photos/Главная/лампочка.png"
+                  alt=""
+                />
+                <div class="blogs__content">
+                  <a class="blogs__title" href="../Html/cheese.html"
+                    >Популярные виды сыров среди потребителей</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footter__col footter__col--third">
+            <div class="footter__title">Связь с нами</div>
+            <div class="svyaz">
+              <a class="svyaz__item"> Телефон: 8-800-555-35-35 </a>
+              <a class="svyaz__item">
+                <p>Почта: cheeseburg@gmail.com</p>
+              </a>
+            </div>
+            <div class="image">
+              <img src="../Photos/Главная/футер.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          © 2023 Сырбург by <span>Семченко Олег</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
